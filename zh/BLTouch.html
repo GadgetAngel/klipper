@@ -8,7 +8,7 @@
       
       
       
-      <link rel="icon" href="../img/favicon.ico">
+      <link rel="icon" href="img/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
     
     
@@ -17,10 +17,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.edf004c2.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.edf004c2.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -34,9 +34,9 @@
       
     
     
-      <link rel="stylesheet" href="../_klipper3d/css/extra.css">
+      <link rel="stylesheet" href="_klipper3d/css/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -88,9 +88,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="Klipper documentation" class="md-header__button md-logo" aria-label="Klipper documentation" data-md-component="logo">
+    <a href="." title="Klipper documentation" class="md-header__button md-logo" aria-label="Klipper documentation" data-md-component="logo">
       
-  <img src="../img/klipper.svg" alt="logo">
+  <img src="img/klipper.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -146,14 +146,26 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../BLTouch.html" hreflang="en" class="md-select__link">
+                  <a href="/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="BLTouch.html" hreflang="zh" class="md-select__link">
+                  <a href="/zh/" hreflang="zh" class="md-select__link">
                     简体中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/zh-Hant/" hreflang="zh-Hant" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/hu/" hreflang="hu" class="md-select__link">
+                    Magyar
                   </a>
                 </li>
                 
@@ -239,9 +251,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Klipper documentation" class="md-nav__button md-logo" aria-label="Klipper documentation" data-md-component="logo">
+    <a href="." title="Klipper documentation" class="md-nav__button md-logo" aria-label="Klipper documentation" data-md-component="logo">
       
-  <img src="../img/klipper.svg" alt="logo">
+  <img src="img/klipper.svg" alt="logo">
 
     </a>
     Klipper documentation
@@ -595,7 +607,7 @@
       
         <li class="md-nav__item">
   <a href="#bl-touch_2" class="md-nav__link">
-    BL-Touch 坏了
+    BL-Touch 出现故障
   </a>
   
 </li>
@@ -864,7 +876,7 @@
   
     <li class="md-nav__item">
       <a href="Multi_MCU_Homing.html" class="md-nav__link">
-        复数微控制器归零与探高
+        多微控制器归位与探高
       </a>
     </li>
   
@@ -1024,7 +1036,7 @@
   
     <li class="md-nav__item">
       <a href="CANBUS_protocol.html" class="md-nav__link">
-        CANBUS 协议
+        CANBUS 协议 (CANBUS protocol)
       </a>
     </li>
   
@@ -1281,7 +1293,7 @@
       
         <li class="md-nav__item">
   <a href="#bl-touch_2" class="md-nav__link">
-    BL-Touch 坏了
+    BL-Touch 出现故障
   </a>
   
 </li>
@@ -1333,7 +1345,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/Klipper3d/klipper/blob/master/docs/BLTouch.zh.md" title="编辑此页" class="md-content__button md-icon">
+<a href="https://github.com/Klipper3d/klipper/blob/master/docs/BLTouch.md" title="编辑此页" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
@@ -1363,7 +1375,7 @@ z_hop_speed: 5
 <p>下一步是确认传感器的探针是否正常工作。运行<code>BLTOUCH_DEBUG COMMAND=pin_down</code>，检查探针是否向下移动。运行<code>BLTOUCH_DEBUG COMMAND=touch_mode</code>，再运行<code>QUERY_PROBE</code>，并验证命令报告"probe: open"。然后，在用指甲轻轻推起针头的同时，再次运行<code>QUERY_PROBE</code>。验证命令是否报告"probe: TRIGGERED"。如果任何一个查询都没有报告正确的信息，那么它通常表明接线或配置不正确（尽管一些<a href="#bl-touch-clones">盗版设备</a>需要特殊处理）。在这个测试完成后，运行<code>BLTOUCH_DEBUG COMMAND=pin_up</code>并检查引脚是否向上移动。</p>
 <p>在完成 BL-TOUCH contro 引脚和 sensor 引脚的测试后，现在是测试探针的时候了，但有一个技巧。不要让探针接触打印床，而是让它接触你手指甲。将打印头移动到离床面较远的位置，发送<code>G28</code>（如果不使用probe:z_virtual_endstop，发送<code>PROBE</code>），等待工具头开始向下移动，然后用手指甲轻轻地触摸针脚来停止移动。你可能要做两次，因为默认的归位配置会探测两次。如果你触摸探针时它没有停止，请立即关闭打印机电源。</p>
 <p>如果成功了，再做一次<code>G28</code>（或<code>PROBE</code>），但是这次让它触碰到热床。</p>
-<h2 id="bl-touch_2">BL-Touch 坏了<a class="headerlink" href="#bl-touch_2" title="Permanent link">&para;</a></h2>
+<h2 id="bl-touch_2">BL-Touch 出现故障<a class="headerlink" href="#bl-touch_2" title="Permanent link">&para;</a></h2>
 <p>当 BL-Touch 在不一致状态时，它就会开始闪烁红色。可以通过以下命令强制它离开此状态：</p>
 <p>BLTOUCH_DEBUG COMMAND=reset</p>
 <p>这种情况可能会在校准中被阻止伸出的探针中断时出现。</p>
@@ -1470,10 +1482,10 @@ z_hop_speed: 5
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      <script src="assets/javascripts/bundle.e1a181d9.min.js"></script>
       
     
   </body>
